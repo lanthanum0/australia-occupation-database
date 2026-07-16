@@ -1,0 +1,16 @@
+visa_subclass,visa_name,visa_stream,list_code,list_name,occupation_count
+186,Employer Nomination Scheme (subclass 186),Direct Entry stream,CSOL,Core Skills Occupation List,456
+189,Skilled Independent visa (subclass 189),Points-tested stream,MLTSSL,Medium and Long-term Strategic Skills List,212
+190,Skilled Nominated visa (subclass 190),State or Territory nominated,MLTSSL,Medium and Long-term Strategic Skills List,212
+190,Skilled Nominated visa (subclass 190),State or Territory nominated,STSOL,Short-term Skilled Occupation List,215
+407,Training visa (subclass 407),Training visa,MLTSSL,Medium and Long-term Strategic Skills List,216
+407,Training visa (subclass 407),Training visa,ROL,Regional Occupation List,77
+407,Training visa (subclass 407),Training visa,STSOL,Short-term Skilled Occupation List,216
+482,Skills in Demand (subclass 482),Core Skills stream,CSOL,Core Skills Occupation List,456
+485,Temporary Graduate visa (subclass 485),Post-Vocational Education Work stream,MLTSSL,Medium and Long-term Strategic Skills List,212
+491,Skilled Work Regional (Provisional) visa (subclass 491),Not nominated by a State or Territory government agency,MLTSSL,Medium and Long-term Strategic Skills List,212
+491,Skilled Work Regional (Provisional) visa (subclass 491),State or Territory nominated,MLTSSL,Medium and Long-term Strategic Skills List,212
+491,Skilled Work Regional (Provisional) visa (subclass 491),State or Territory nominated,ROL,Regional Occupation List,77
+491,Skilled Work Regional (Provisional) visa (subclass 491),State or Territory nominated,STSOL,Short-term Skilled Occupation List,215
+494,Skilled Employer Sponsored Regional (provisional) visa (subclass 494),Employer sponsored regional,MLTSSL,Medium and Long-term Strategic Skills List,216
+494,Skilled Employer Sponsored Regional (provisional) visa (subclass 494),Employer sponsored regional,ROL,Regional Occupation List,434
