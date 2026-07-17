@@ -334,50 +334,90 @@ def parse_wa(html_path: Path) -> list[StateOccupation]:
 
 
 def parse_tas(html_path: Path) -> list[StateOccupation]:
-    """Parse Tasmania occupation list."""
+    """Parse Tasmania occupation list.
+
+    Tasmania packs multiple occupations into a single "Related Occupations/Roles"
+    cell, each in the format "123456 Occupation Name" run together. Caveats
+    (like "only eligible under subclass 491") are in a separate column and
+    reference specific codes.
+    """
     soup = BeautifulSoup(html_path.read_bytes(), "html.parser")
     results = []
+
+    # Determine which page/list this is from
+    page_title = soup.find("title")
+    page_title_text = page_title.get_text() if page_title else ""
+    list_name = "Health, Allied Health & Teaching" if "health" in page_title_text.lower() else "General"
+
+    source_url = "https://www.migration.tas.gov.au/skilled_migrants/skilled_occupation_lists"
 
     tables = soup.find_all("table")
     for table in tables:
         rows = table.find_all("tr")
-        if not rows:
+        if len(rows) < 2:
             continue
 
         header_cells = rows[0].find_all(["th", "td"])
         headers = [_clean(c.get_text()).lower() for c in header_cells]
 
-        code_idx = next((i for i, h in enumerate(headers) if "anzsco" in h or "code" in h), None)
-        title_idx = next((i for i, h in enumerate(headers) if "occupation" in h or "title" in h), None)
+        # Find the "related occupations" and "caveats" columns
+        occ_idx = next((i for i, h in enumerate(headers)
+                       if "related" in h or "occupations/roles" in h or "roles" in h), None)
+        caveat_idx = next((i for i, h in enumerate(headers) if "caveat" in h), None)
+        group_idx = next((i for i, h in enumerate(headers) if "group" in h), None)
 
-        if code_idx is None or title_idx is None:
+        if occ_idx is None:
             continue
 
         for row in rows[1:]:
             cells = row.find_all(["td", "th"])
-            if len(cells) <= max(code_idx, title_idx):
+            if len(cells) <= occ_idx:
                 continue
 
-            code = _clean(cells[code_idx].get_text())
-            title = _clean(cells[title_idx].get_text())
+            occ_text = cells[occ_idx].get_text()
+            caveat_text = _clean(cells[caveat_idx].get_text()) if caveat_idx is not None and caveat_idx < len(cells) else ""
+            group_text = _clean(cells[group_idx].get_text()) if group_idx is not None and group_idx < len(cells) else ""
 
-            if not re.match(r'^\d{6}$', code):
-                continue
+            # Extract individual occupations: "123456 Occupation Name"
+            # Followed by either another 6-digit code or end of text.
+            # Include optional leading * for caveat marker.
+            matches = list(re.finditer(r'(\*?)(\d{6})\s*([^\d]+?)(?=\*?\d{6}|$)', occ_text))
 
-            extra = " | ".join(_clean(cells[i].get_text()) for i in range(len(cells))
-                              if i not in (code_idx, title_idx) and _clean(cells[i].get_text()))
+            for m in matches:
+                marker = m.group(1)
+                code = m.group(2)
+                title = _clean(m.group(3).rstrip(' *'))
 
-            results.append(StateOccupation(
-                state_code="tas",
-                state_name="Tasmania",
-                anzsco_code=code,
-                occupation_title=title,
-                visa_subclass="190/491",
-                stream=None,
-                priority=None,
-                conditions=extra or None,
-                source_url="https://www.migration.tas.gov.au/skilled_migrants/skilled_occupation_lists",
-            ))
+                if not title:
+                    continue
+
+                # Check caveats for restrictions on this code
+                stream = None
+                conditions_parts = []
+                if group_text:
+                    conditions_parts.append(f"Group: {group_text}")
+
+                # Parse caveat for this specific code
+                if caveat_text:
+                    for cav_m in re.finditer(r'\*?(\d{6})[^.]*?subclass\s+(\d+)', caveat_text, re.I):
+                        if cav_m.group(1) == code:
+                            stream = f"subclass {cav_m.group(2)} only"
+                            break
+
+                if caveat_text and (marker == "*" or code in caveat_text):
+                    conditions_parts.append(caveat_text)
+
+                results.append(StateOccupation(
+                    state_code="tas",
+                    state_name="Tasmania",
+                    anzsco_code=code,
+                    occupation_title=title,
+                    visa_subclass="190/491" if not stream else stream.split()[-2],
+                    stream=stream,
+                    priority=list_name,
+                    conditions=" | ".join(conditions_parts) if conditions_parts else None,
+                    source_url=source_url,
+                ))
 
     return results
 
