@@ -489,6 +489,22 @@ HTML_TEMPLATE = """<!doctype html>
       display: none !important;
     }
 
+    .view-note {
+      background: #fff9ec;
+      border: 1px solid #e8d69f;
+      border-left: 4px solid #c99a26;
+      color: #4a3a10;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .view-note b {
+      color: #2b2b2b;
+    }
+
     .guide-box {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -795,6 +811,8 @@ HTML_TEMPLATE = """<!doctype html>
         </div>
       </section>
 
+      <div id="viewNote" class="view-note hidden"></div>
+
       <section class="table-shell">
         <div class="table-meta">
           <div id="tableTitle"></div>
@@ -904,6 +922,7 @@ HTML_TEMPLATE = """<!doctype html>
       state_nominations: {
         title: "州/领地职业提名清单",
         rows: DATA.state_nominations || [],
+        note: "已覆盖 3/8：<b>NSW</b>（4位ANZSCO unit group，190/491）· <b>QLD</b>（6位ANZSCO，190/491）· <b>TAS</b>（Health / Allied Health / Teaching 专项）。未覆盖：<b>VIC</b>（Salesforce 门户）· <b>SA</b>（SPA 未渲染）· <b>WA</b>（数据在需交互展开的区域）· <b>NT</b> · <b>ACT</b>（Cloudflare Turnstile 拦截）。数据抓取于 2026-07。",
         searchable: ["occupation_title", "anzsco_code", "state_name", "visa_subclass", "priority", "conditions"],
         filters: [
           { key: "q", type: "search", label: "搜索" },
@@ -1105,6 +1124,13 @@ HTML_TEMPLATE = """<!doctype html>
       const pageRows = rows.slice(start, start + state.pageSize);
 
       el("tableTitle").textContent = config.title;
+      const noteEl = el("viewNote");
+      if (config.note) {
+        noteEl.innerHTML = config.note;
+        noteEl.classList.remove("hidden");
+      } else {
+        noteEl.classList.add("hidden");
+      }
       el("resultLabel").textContent = `${rows.length.toLocaleString()} 条结果`;
       el("pageLabel").textContent = `${state.page} / ${totalPages}`;
       el("prevBtn").disabled = state.page <= 1;
