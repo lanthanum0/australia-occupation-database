@@ -21,6 +21,8 @@ This is a data aid, not migration or legal advice. Always re-check the linked of
 - `scripts/build_html_preview.py` - rebuilds the static HTML preview from the SQLite database
 - `scripts/inspect_docx_tables.py` - helper for checking Word table extraction
 - `queries.sql` - example queries
+- `scripts/scrape_state_lists.py` - downloads state/territory occupation nomination lists
+- `scripts/parse_state_lists.py` - parses downloaded state lists into the database
 
 ## Official Sources
 
@@ -58,6 +60,22 @@ The occupation records currently cover the skilled visa occupation lists specifi
 - subclass 494: MLTSSL and ROL, ANZSCO 2013
 
 Some visas on the Home Affairs visa list do not have an occupation list. They remain in `visas`, but have no `occupation_records`.
+
+## State/Territory Nomination Lists
+
+In addition to the federal occupation lists, each state and territory publishes their own nomination priority lists for visa subclasses 190 and 491. These are stored in the `state_nominations` table.
+
+Covered states: NSW, VIC, QLD, SA, WA, TAS, NT, ACT
+
+To download and parse state lists:
+
+```bash
+pip install requests beautifulsoup4
+python3 scripts/scrape_state_lists.py
+python3 scripts/parse_state_lists.py
+```
+
+The state lists change frequently. Re-run the scripts to refresh.
 
 ## Rebuild
 

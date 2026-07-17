@@ -1,0 +1,50 @@
+{
+  "nsw": {
+    "name": "New South Wales",
+    "url": "https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists",
+    "downloaded": true,
+    "local_file": "data/raw/states/nsw_occupation_list.html"
+  },
+  "vic": {
+    "name": "Victoria",
+    "url": "https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/visa-nomination-occupation-list",
+    "downloaded": false,
+    "local_file": null
+  },
+  "qld": {
+    "name": "Queensland",
+    "url": "https://migration.qld.gov.au/skilled-occupation-lists/",
+    "downloaded": true,
+    "local_file": "data/raw/states/qld_occupation_list.html"
+  },
+  "sa": {
+    "name": "South Australia",
+    "url": "https://www.migration.sa.gov.au/occupation-lists/skilled-occupation-list",
+    "downloaded": false,
+    "local_file": null
+  },
+  "wa": {
+    "name": "Western Australia",
+    "url": "https://migration.wa.gov.au/services/skilled-migration-western-australia/occupation-list",
+    "downloaded": false,
+    "local_file": null
+  },
+  "tas": {
+    "name": "Tasmania",
+    "url": "https://www.migration.tas.gov.au/skilled_migrants/skilled_occupation_lists",
+    "downloaded": false,
+    "local_file": null
+  },
+  "nt": {
+    "name": "Northern Territory",
+    "url": "https://theterritory.com.au/migrate/nominating-for-a-visa/skilled-occupation-list",
+    "downloaded": false,
+    "local_file": null
+  },
+  "act": {
+    "name": "Australian Capital Territory",
+    "url": "https://www.act.gov.au/migration/skilled-migrants/act-skilled-nominated-visa-subclass-190/occupation-list",
+    "downloaded": false,
+    "local_file": null
+  }
+}

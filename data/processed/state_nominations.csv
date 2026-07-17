@@ -1,0 +1,271 @@
+id,state_code,state_name,anzsco_code,occupation_title,visa_subclass,stream,priority,conditions,source_url
+1,nsw,New South Wales,1325,Research and Development Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+2,nsw,New South Wales,1331,Construction Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+3,nsw,New South Wales,1332,Engineering Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+4,nsw,New South Wales,1334,Manufacturers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+5,nsw,New South Wales,1335,Production Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+6,nsw,New South Wales,1341,Child Care Centre Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+7,nsw,New South Wales,1342,Health and Welfare Services Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+8,nsw,New South Wales,1343,School Principals,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+9,nsw,New South Wales,1351,ICT Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+10,nsw,New South Wales,2245,Land Economists and Valuers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+11,nsw,New South Wales,2321,Architects and Landscape Architects,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+12,nsw,New South Wales,2322,Surveyors and Spatial Scientists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+13,nsw,New South Wales,2326,Urban and Regional Planners,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+14,nsw,New South Wales,2331,Chemical and Materials Engineers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+15,nsw,New South Wales,2332,Civil Engineering Professionals,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+16,nsw,New South Wales,2333,Electrical Engineers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+17,nsw,New South Wales,2334,Electronics Engineers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+18,nsw,New South Wales,2335,"Industrial, Mechanical and Production Engineers",190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+19,nsw,New South Wales,2336,Mining Engineers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+20,nsw,New South Wales,2339,Other Engineering Professionals,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+21,nsw,New South Wales,2341,Agricultural and Forestry Scientists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+22,nsw,New South Wales,2342,"Chemists, and Food and Wine Scientists",190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+23,nsw,New South Wales,2343,Environmental Scientists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+24,nsw,New South Wales,2344,"Geologists, Geophysicists and Hydrogeologists",190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+25,nsw,New South Wales,2347,Veterinarians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+26,nsw,New South Wales,2411,Early Childhood (Pre-primary School) Teachers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+27,nsw,New South Wales,2412,Primary School Teachers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+28,nsw,New South Wales,2414,Secondary School Teachers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+29,nsw,New South Wales,2421,University Lecturers and Tutors,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+30,nsw,New South Wales,2512,Medical Imaging Professionals,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+31,nsw,New South Wales,2513,Occupational and Environmental Health Professionals,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+32,nsw,New South Wales,2515,Pharmacists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+33,nsw,New South Wales,2521,Chiropractors and Osteopaths,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+34,nsw,New South Wales,2524,Occupational Therapists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+35,nsw,New South Wales,2525,Physiotherapist,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+36,nsw,New South Wales,2527,Audiologist and Speech Pathologists/Therapist,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+37,nsw,New South Wales,2531,Generalist Medical Practitioners,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+38,nsw,New South Wales,2533,Specialist Physicians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+39,nsw,New South Wales,2534,Psychiatrists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+40,nsw,New South Wales,2535,Surgeons,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+41,nsw,New South Wales,2539,Other Medical Practitioners,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+42,nsw,New South Wales,2541,Midwives,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+43,nsw,New South Wales,2543,Nurse Managers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+44,nsw,New South Wales,2544,Registered Nurses,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+45,nsw,New South Wales,2611,ICT Business and Systems Analysts,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+46,nsw,New South Wales,2613,Software and Applications Programmers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+47,nsw,New South Wales,2621,"Database and Systems Administrators, and ICT Security Specialists",190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+48,nsw,New South Wales,2631,Computer Network Professionals,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+49,nsw,New South Wales,2723,Psychologists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+50,nsw,New South Wales,2725,Social Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+51,nsw,New South Wales,3112,Medical Technicians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+52,nsw,New South Wales,3121,"Architectural, Building and Surveying Technicians",190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+53,nsw,New South Wales,3122,Civil Engineering Draftspersons and Technicians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+54,nsw,New South Wales,3123,Electrical Engineering Draftspersons and Technicians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+55,nsw,New South Wales,3125,Mechanical Engineering Draftspersons and Technicians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+56,nsw,New South Wales,3129,Other Building and Engineering Technicians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+57,nsw,New South Wales,3211,Automotive Electricians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+58,nsw,New South Wales,3212,Motor Mechanics,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+59,nsw,New South Wales,3222,Sheetmetal Trades Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+60,nsw,New South Wales,3223,Structural Steel and Welding Trades Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+61,nsw,New South Wales,3231,Aircraft Maintenance Engineers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+62,nsw,New South Wales,3232,Metal Fitters and Machinists,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+63,nsw,New South Wales,3234,Toolmakers and Engineering Patternmakers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+64,nsw,New South Wales,3311,Bricklayers and Stonemasons,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+65,nsw,New South Wales,3312,Carpenters and Joiners,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+66,nsw,New South Wales,3322,Painting Trades Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+67,nsw,New South Wales,3331,Glaziers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+68,nsw,New South Wales,3332,Plasterers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+69,nsw,New South Wales,3333,Roof Tilers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+70,nsw,New South Wales,3334,Wall and Floor Tilers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+71,nsw,New South Wales,3341,Plumbers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+72,nsw,New South Wales,3411,Electricians,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+73,nsw,New South Wales,3421,Airconditioning and Refrigeration Mechanics,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+74,nsw,New South Wales,3422,Electrical Distribution Trades Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+75,nsw,New South Wales,3423,Electronics Trades Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+76,nsw,New South Wales,3424,Telecommunications Trades Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+77,nsw,New South Wales,3613,Veterinary Nurses,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+78,nsw,New South Wales,3941,Cabinetmakers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+79,nsw,New South Wales,4117,Welfare Support Workers,190,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+80,nsw,New South Wales,1212,Crop Farmer,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+81,nsw,New South Wales,1214,Mixed Crop and Livestock Farmers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+82,nsw,New South Wales,1324,Policy and Planning Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+83,nsw,New South Wales,1325,Research and Development Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+84,nsw,New South Wales,1331,Construction Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+85,nsw,New South Wales,1332,Engineering Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+86,nsw,New South Wales,1334,Manufacturers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+87,nsw,New South Wales,1335,Production Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+88,nsw,New South Wales,1341,Child Care Centre Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+89,nsw,New South Wales,1342,Health and Welfare Services Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+90,nsw,New South Wales,1351,ICT Managers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+91,nsw,New South Wales,2245,Land Economists and Valuers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+92,nsw,New South Wales,2312,Marine Transport Professionals,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+93,nsw,New South Wales,2321,Architects and Landscape Architects,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+94,nsw,New South Wales,2322,Surveyors and Spatial Scientists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+95,nsw,New South Wales,2326,Urban and Regional Planners,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+96,nsw,New South Wales,2331,Chemical and Materials Engineers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+97,nsw,New South Wales,2332,Civil Engineering Professionals,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+98,nsw,New South Wales,2333,Electrical Engineers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+99,nsw,New South Wales,2335,"Industrial, Mechanical and Production Engineers",491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+100,nsw,New South Wales,2336,Mining Engineers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+101,nsw,New South Wales,2339,Other Engineering Professionals,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+102,nsw,New South Wales,2342,"Chemists, and Food and Wine Scientists",491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+103,nsw,New South Wales,2343,Environmental Scientists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+104,nsw,New South Wales,2344,"Geologists, Geophysicists and Hydrogeologists",491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+105,nsw,New South Wales,2347,Veterinarians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+106,nsw,New South Wales,2411,Early Childhood (Pre-primary School) Teachers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+107,nsw,New South Wales,2412,Primary School Teachers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+108,nsw,New South Wales,2414,Secondary School Teachers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+109,nsw,New South Wales,2421,University Lecturers and Tutors,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+110,nsw,New South Wales,2512,Medical Imaging Professionals,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+111,nsw,New South Wales,2513,Occupational and Environmental Health Professionals,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+112,nsw,New South Wales,2515,Pharmacists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+113,nsw,New South Wales,2523,Dental Practitioners,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+114,nsw,New South Wales,2524,Occupational Therapists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+115,nsw,New South Wales,2525,Physiotherapists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+116,nsw,New South Wales,2527,Audiologists and Speech Pathologists / Therapists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+117,nsw,New South Wales,2531,Generalist Medical Practitioners,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+118,nsw,New South Wales,2533,Specialist Physicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+119,nsw,New South Wales,2539,Other Medical Practitioners,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+120,nsw,New South Wales,2544,Registered Nurses,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+121,nsw,New South Wales,2611,ICT Business and Systems Analysts,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+122,nsw,New South Wales,2613,Software and Applications Programmers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+123,nsw,New South Wales,2621,"Database and Systems Administrators, and ICT Security Specialists",491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+124,nsw,New South Wales,2631,Computer Network Professionals,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+125,nsw,New South Wales,2723,Psychologists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+126,nsw,New South Wales,2725,Social Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+127,nsw,New South Wales,3111,Agricultural Technicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+128,nsw,New South Wales,3112,Medical Technicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+129,nsw,New South Wales,3121,"Architectural, Building and Surveying Technicians",491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+130,nsw,New South Wales,3122,Civil Engineering Draftspersons and Technicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+131,nsw,New South Wales,3123,Electrical Engineering Draftspersons and Technicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+132,nsw,New South Wales,3125,Mechanical Engineering Draftspersons and Technicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+133,nsw,New South Wales,3129,Other Building and Engineering Technicians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+134,nsw,New South Wales,3211,Automotive Electricians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+135,nsw,New South Wales,3212,Motor Mechanics,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+136,nsw,New South Wales,3222,Sheetmetal Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+137,nsw,New South Wales,3223,Structural Steel and Welding Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+138,nsw,New South Wales,3231,Aircraft Maintenance Engineers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+139,nsw,New South Wales,3232,Metal Fitters and Machinists,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+140,nsw,New South Wales,3311,Bricklayers and Stonemasons,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+141,nsw,New South Wales,3312,Carpenters and Joiners,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+142,nsw,New South Wales,3322,Painting Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+143,nsw,New South Wales,3331,Glaziers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+144,nsw,New South Wales,3332,Plasterers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+145,nsw,New South Wales,3333,Roof Tilers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+146,nsw,New South Wales,3334,Wall and Floor Tilers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+147,nsw,New South Wales,3341,Plumbers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+148,nsw,New South Wales,3411,Electricians,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+149,nsw,New South Wales,3421,Airconditioning and Refrigeration Mechanics,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+150,nsw,New South Wales,3422,Electrical Distribution Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+151,nsw,New South Wales,3423,Electronics Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+152,nsw,New South Wales,3424,Telecommunications Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+153,nsw,New South Wales,3613,Veterinary Nurses,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+154,nsw,New South Wales,3941,Cabinetmakers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+155,nsw,New South Wales,3942,Wood Machinists and Other Wood Trades Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+156,nsw,New South Wales,3992,"Chemical, Gas, Petroleum and Power Generation Plant Operators",491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+157,nsw,New South Wales,4117,Welfare Support Workers,491,,,Unit group (4-digit ANZSCO),https://www.nsw.gov.au/visas-and-migration/skilled-visas/nsw-skills-lists
+158,qld,Queensland,133111,Construction Project Manager,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+159,qld,Queensland,133112,Project Builder,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+160,qld,Queensland,133211,Engineering Manager,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+161,qld,Queensland,133411,Manufacturer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+162,qld,Queensland,133512,Production Manager (Manufacturing),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+163,qld,Queensland,232212,Surveyor,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+164,qld,Queensland,232611,Urban And Regional Planner,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+165,qld,Queensland,233111,Chemical Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+166,qld,Queensland,233112,Materials Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+167,qld,Queensland,233211,Civil Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+168,qld,Queensland,233212,Geotechnical Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+169,qld,Queensland,233213,Quantity Surveyor,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+170,qld,Queensland,233214,Structural Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+171,qld,Queensland,233215,Transport Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+172,qld,Queensland,233311,Electrical Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+173,qld,Queensland,233411,Electronics Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+174,qld,Queensland,233511,Industrial Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+175,qld,Queensland,233512,Mechanical Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+176,qld,Queensland,233513,Production or Plant Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+177,qld,Queensland,233611,Mining Engineer (Excluding Petroleum),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+178,qld,Queensland,233612,Petroleum Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+179,qld,Queensland,233912,Agricultural Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+180,qld,Queensland,233913,Biomedical Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+181,qld,Queensland,233915,Environmental Engineer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+182,qld,Queensland,234312,Environmental Consultant,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+183,qld,Queensland,234399,Environmental Scientist (Nec),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+184,qld,Queensland,234411,Geologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+185,qld,Queensland,234413,Hydrogeologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+186,qld,Queensland,234711,Veterinarian,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+187,qld,Queensland,241111,Early Childhood (Pre-primary School) Teacher,190/491,,,"AQF Bachelor degree required. Registration required to work in Qld schools Unless qualification has been undertaken in Aus, NZ, UK, USA, CAN or IRE, academic IELTS with 7 for reading and writing and 8 for speaking and listening and an overall of 7.5 minimum required.",https://migration.qld.gov.au/skilled-occupation-lists/
+188,qld,Queensland,241213,Primary School Teacher,491,,,"Registration required to work in Qld schools Unless qualification has been undertaken in Aus, NZ, UK, USA, CAN or IRE, academic IELTS with 7 for reading and writing and 8 for speaking and listening and an overall of 7.5 minimum required.",https://migration.qld.gov.au/skilled-occupation-lists/
+189,qld,Queensland,241311,Middle School Teacher / Intermediate School Teacher,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+190,qld,Queensland,241411,Secondary School Teacher,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+191,qld,Queensland,241511,Special Needs Teacher,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+192,qld,Queensland,241512,Teacher Of The Hearing Impaired,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+193,qld,Queensland,241513,Teacher Of The Sight Impaired,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+194,qld,Queensland,241599,Special Education Teachers (Nec),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+195,qld,Queensland,242211,Vocational Education Teacher / Polytechnic Teacher,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+196,qld,Queensland,251211,Medical Diagnostic Radiographer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+197,qld,Queensland,251212,Medical Radiation Therapist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+198,qld,Queensland,251213,Nuclear Medicine Technologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+199,qld,Queensland,251214,Sonographer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+200,qld,Queensland,252411,Occupational Therapist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+201,qld,Queensland,252511,Physiotherapist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+202,qld,Queensland,252611,Podiatrist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+203,qld,Queensland,252711,Audiologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+204,qld,Queensland,252712,Speech Pathologist / Speech Language Therapist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+205,qld,Queensland,253411,Psychiatrist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+206,qld,Queensland,254111,Midwife,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+207,qld,Queensland,254412,Registered Nurse (Aged Care),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+208,qld,Queensland,254413,Registered Nurse (Child And Family Health),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+209,qld,Queensland,254414,Registered Nurse (Community Health),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+210,qld,Queensland,254415,Registered Nurse (Critical Care And Emergency),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+211,qld,Queensland,254416,Registered Nurse (Developmental Disability),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+212,qld,Queensland,254417,Registered Nurse (Disability And Rehabilitation),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+213,qld,Queensland,254418,Registered Nurse (Medical),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+214,qld,Queensland,254421,Registered Nurse (Medical Practice),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+215,qld,Queensland,254422,Registered Nurse (Mental Health),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+216,qld,Queensland,254423,Registered Nurse (Perioperative),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+217,qld,Queensland,254424,Registered Nurse (Surgical),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+218,qld,Queensland,254425,Registered Nurse (Paediatrics),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+219,qld,Queensland,262112,ICT Security Specialist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+220,qld,Queensland,272311,Clinical Psychologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+221,qld,Queensland,272312,Educational Psychologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+222,qld,Queensland,272313,Organisational Psychologist,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+223,qld,Queensland,272399,Psychologists (Nec),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+224,qld,Queensland,312111,Architectural Draftsperson,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+225,qld,Queensland,312113,Building Inspector,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+226,qld,Queensland,312114,Construction Estimator,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+227,qld,Queensland,312116,Surveying Or Spatial Science Technician,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+228,qld,Queensland,312199,"Architectural, Building And Surveying Technicians (Nec)",190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+229,qld,Queensland,312211,Civil Engineering Draftsperson,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+230,qld,Queensland,312212,Civil Engineering Technician,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+231,qld,Queensland,312311,Electrical Engineering Draftsperson,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+232,qld,Queensland,312312,Electrical Engineering Technician,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+233,qld,Queensland,312511,Mechanical Engineering Draftsperson,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+234,qld,Queensland,312512,Mechanical Engineering Technician,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+235,qld,Queensland,312912,Metallurgical Or Materials Technician,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+236,qld,Queensland,312999,Building And Engineering Technicians (nec),491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+237,qld,Queensland,322211,Sheetmetal Trades Worker,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+238,qld,Queensland,322311,Metal Fabricator,190/491,,,ISO9606 welding qualification is preferred ​,https://migration.qld.gov.au/skilled-occupation-lists/
+239,qld,Queensland,322312,Pressure Welder,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+240,qld,Queensland,322313,Welder (First Class),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+241,qld,Queensland,323111,Aircraft Maintenance Engineer (Avionics),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+242,qld,Queensland,323112,Aircraft Maintenance Engineer (Mechanical),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+243,qld,Queensland,323113,Aircraft Maintenance Engineer (Structures),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+244,qld,Queensland,323211,Fitter (General),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+245,qld,Queensland,323212,Fitter And Turner,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+246,qld,Queensland,323213,Fitter Welder,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+247,qld,Queensland,323214,Metal Machinist (First Class),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+248,qld,Queensland,323299,Metal Fitters and Machinists (nec),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+249,qld,Queensland,331111,Bricklayer,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+250,qld,Queensland,331112,Stonemason,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+251,qld,Queensland,331211,Carpenter And Joiner,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+252,qld,Queensland,331212,Carpenter,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+253,qld,Queensland,331213,Joiner,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+254,qld,Queensland,332111,Floor Finisher,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+255,qld,Queensland,333111,Glazier,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+256,qld,Queensland,333211,Plasterer (Wall and Ceiling),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+257,qld,Queensland,333212,Renderer (Solid Plaster),190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+258,qld,Queensland,333311,Roof Tiler,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+259,qld,Queensland,333411,Wall And Floor Tiler,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+260,qld,Queensland,334111,Plumber (General),190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+261,qld,Queensland,334112,Airconditioning And Mechanical Services Plumber,190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+262,qld,Queensland,334113,Drainer,190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+263,qld,Queensland,334114,Gasfitter,190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+264,qld,Queensland,334115,Roof Plumber,190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+265,qld,Queensland,341111,Electrician (General),190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+266,qld,Queensland,341112,Electrician (Special Class),190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+267,qld,Queensland,341113,Lift Mechanic,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+268,qld,Queensland,342111,Airconditioning And Refrigeration Mechanic,190/491,,,Licence required to work in Qld,https://migration.qld.gov.au/skilled-occupation-lists/
+269,qld,Queensland,342211,Electrical Lines worker / Electrical Line Mechanic,491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
+270,qld,Queensland,399213,Power Generation Plant Operator,190/491,,,,https://migration.qld.gov.au/skilled-occupation-lists/
