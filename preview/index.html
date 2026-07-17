@@ -395,6 +395,177 @@
       display: none !important;
     }
 
+    .guide-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+
+    .guide-box h2 {
+      margin: 0 0 16px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .guide-steps {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      flex: 0 0 28px;
+      height: 28px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .step-content b {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .step-content p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .lookup-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 24px;
+    }
+
+    .lookup-box h2 {
+      margin: 0 0 14px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .lookup-input-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .lookup-input-row input {
+      flex: 1;
+    }
+
+    .result-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+
+    .result-card h3 {
+      margin: 0 0 4px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .result-card .anzsco-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    .result-section {
+      margin-top: 14px;
+    }
+
+    .result-section h4 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .visa-paths {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px;
+    }
+
+    .visa-path-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+
+    .visa-path-item .subclass {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .visa-path-item .list-name {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .state-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .state-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--soft);
+      border: 1px solid #cce0d9;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+
+    .state-chip .state-label {
+      font-weight: 600;
+    }
+
+    .state-chip .visa-label {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .assessor-info {
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    .no-results {
+      color: var(--muted);
+      font-size: 14px;
+      padding: 12px 0;
+    }
+
     .empty {
       padding: 28px;
       text-align: center;
@@ -423,7 +594,8 @@
         <div class="meta" id="sourceMeta"></div>
       </div>
       <nav class="tabs" aria-label="views">
-        <button class="tab active" data-view="occupations">职业清单</button>
+        <button class="tab active" data-view="lookup">职业查询</button>
+        <button class="tab" data-view="occupations">联邦职业清单</button>
         <button class="tab" data-view="state_nominations">州提名</button>
         <button class="tab" data-view="visas">签证列表</button>
         <button class="tab" data-view="summary">汇总</button>
@@ -433,40 +605,94 @@
   </header>
 
   <main>
-    <section class="metrics" id="metrics"></section>
-
-    <section class="filters">
-      <div class="filter-grid" id="filterGrid"></div>
-      <div class="actions">
-        <div class="meta" id="resultLabel"></div>
-        <div class="button-row">
-          <button class="command" id="resetBtn">重置筛选</button>
-          <button class="command primary" id="exportBtn">导出当前结果</button>
+    <!-- Lookup view (default) -->
+    <section id="lookupView">
+      <div class="guide-box">
+        <h2>澳洲技术移民签证逻辑</h2>
+        <div class="guide-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <b>确认职业在清单上</b>
+              <p>联邦政府维护多份职业清单（MLTSSL、STSOL、CSOL、ROL），你的职业必须在对应清单上才能申请对应签证。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <b>完成职业评估</b>
+              <p>每个职业有指定的评估机构（如 Engineers Australia、ACS、VETASSESS 等），需要通过评估证明你的学历和工作经验符合要求。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <b>选择签证通道</b>
+              <p><b>189</b> 独立技术移民（无需州担保，凑分制）<br>
+                 <b>190</b> 州担保（需要州/领地提名，+5分）<br>
+                 <b>491</b> 偏远地区州担保（+15分，需在偏远地区生活工作）<br>
+                 <b>482</b> 雇主担保工作签<br>
+                 <b>186</b> 雇主担保永居<br>
+                 <b>494</b> 偏远地区雇主担保</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <b>州提名（190/491）</b>
+              <p>如果走州担保路线，需要确认目标州是否在提名你的职业。每个州有自己的优先清单和额外要求。</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="lookup-box">
+        <h2>输入你的职业，查看完整路径</h2>
+        <div class="lookup-input-row">
+          <input type="text" id="lookupInput" placeholder="输入职业名称或 ANZSCO 代码，如 software engineer 或 261313" autocomplete="off">
+          <button class="command primary" id="lookupBtn">查询</button>
+        </div>
+        <div id="lookupResults"></div>
       </div>
     </section>
 
-    <section class="table-shell">
-      <div class="table-meta">
-        <div id="tableTitle"></div>
-        <label style="display:flex; align-items:center; gap:8px; grid-auto-flow:column;">
-          每页
-          <select id="pageSize" style="width:88px;">
-            <option value="50">50</option>
-            <option value="100" selected>100</option>
-            <option value="250">250</option>
-            <option value="100000">全部</option>
-          </select>
-        </label>
-      </div>
-      <div class="table-wrap" id="tableWrap"></div>
-      <div class="table-meta">
-        <div id="pageLabel"></div>
-        <div class="button-row">
-          <button class="command" id="prevBtn">上一页</button>
-          <button class="command" id="nextBtn">下一页</button>
+    <!-- Data browser views (hidden by default) -->
+    <section id="dataView" class="hidden">
+      <section class="metrics" id="metrics"></section>
+
+      <section class="filters">
+        <div class="filter-grid" id="filterGrid"></div>
+        <div class="actions">
+          <div class="meta" id="resultLabel"></div>
+          <div class="button-row">
+            <button class="command" id="resetBtn">重置筛选</button>
+            <button class="command primary" id="exportBtn">导出当前结果</button>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="table-shell">
+        <div class="table-meta">
+          <div id="tableTitle"></div>
+          <label style="display:flex; align-items:center; gap:8px; grid-auto-flow:column;">
+            每页
+            <select id="pageSize" style="width:88px;">
+              <option value="50">50</option>
+              <option value="100" selected>100</option>
+              <option value="250">250</option>
+              <option value="100000">全部</option>
+            </select>
+          </label>
+        </div>
+        <div class="table-wrap" id="tableWrap"></div>
+        <div class="table-meta">
+          <div id="pageLabel"></div>
+          <div class="button-row">
+            <button class="command" id="prevBtn">上一页</button>
+            <button class="command" id="nextBtn">下一页</button>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -798,8 +1024,17 @@
       state.sortDir = "asc";
       state.page = 1;
       document.querySelectorAll(".tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
-      renderFilters();
-      renderTable();
+
+      if (view === "lookup") {
+        el("lookupView").classList.remove("hidden");
+        el("dataView").classList.add("hidden");
+      } else {
+        el("lookupView").classList.add("hidden");
+        el("dataView").classList.remove("hidden");
+        renderMetrics();
+        renderFilters();
+        renderTable();
+      }
     }
 
     function exportCsv() {
@@ -860,9 +1095,135 @@
       if (event.key === "Escape") closeMultiFilters();
     });
 
-    renderMetrics();
-    renderFilters();
-    renderTable();
+    // --- Lookup logic ---
+    function doLookup() {
+      const query = el("lookupInput").value.trim().toLowerCase();
+      if (!query) {
+        el("lookupResults").innerHTML = "";
+        return;
+      }
+
+      // Search federal occupation records
+      const matches = DATA.occupations.filter(row => {
+        return row.occupation_title.toLowerCase().includes(query)
+          || row.anzsco_code.includes(query);
+      });
+
+      // Group by ANZSCO code + title
+      const grouped = {};
+      matches.forEach(row => {
+        const key = row.anzsco_code;
+        if (!grouped[key]) {
+          grouped[key] = {
+            code: row.anzsco_code,
+            title: row.occupation_title,
+            visas: [],
+            assessors: new Set()
+          };
+        }
+        grouped[key].visas.push(row);
+        if (row.assessing_authority) grouped[key].assessors.add(row.assessing_authority);
+      });
+
+      // Also search state nominations (including 4-digit unit group match)
+      const stateNoms = (DATA.state_nominations || []).filter(row => {
+        return row.occupation_title.toLowerCase().includes(query)
+          || row.anzsco_code.includes(query);
+      });
+
+      // Match state nominations by code prefix for NSW 4-digit codes
+      const stateByCode = {};
+      stateNoms.forEach(row => {
+        const key = row.anzsco_code;
+        if (!stateByCode[key]) stateByCode[key] = [];
+        stateByCode[key].push(row);
+      });
+
+      if (Object.keys(grouped).length === 0 && stateNoms.length === 0) {
+        el("lookupResults").innerHTML = `<div class="no-results">没有找到匹配「${escapeHtml(query)}」的职业。试试英文名称或 ANZSCO 代码。</div>`;
+        return;
+      }
+
+      let html = "";
+      for (const [code, info] of Object.entries(grouped)) {
+        // Find matching state nominations (exact 6-digit or 4-digit prefix)
+        const relatedStates = (DATA.state_nominations || []).filter(sn => {
+          if (sn.anzsco_code === code) return true;
+          if (sn.anzsco_code.length === 4 && code.startsWith(sn.anzsco_code)) return true;
+          return false;
+        });
+
+        // Visa paths - deduplicate by subclass+stream
+        const visaMap = {};
+        info.visas.forEach(v => {
+          const vkey = v.visa_subclass + "|" + (v.visa_stream || "");
+          if (!visaMap[vkey]) visaMap[vkey] = v;
+        });
+
+        html += `<div class="result-card">`;
+        html += `<h3>${escapeHtml(info.title)}<span class="anzsco-badge">${escapeHtml(code)}</span></h3>`;
+
+        // Assessing authorities
+        if (info.assessors.size) {
+          html += `<div class="result-section"><h4>职业评估机构</h4>`;
+          html += `<div class="assessor-info">${Array.from(info.assessors).map(a => escapeHtml(a)).join(" / ")}</div>`;
+          html += `</div>`;
+        }
+
+        // Visa pathways
+        html += `<div class="result-section"><h4>可申请签证</h4><div class="visa-paths">`;
+        for (const v of Object.values(visaMap)) {
+          html += `<div class="visa-path-item">`;
+          html += `<div><span class="subclass">${escapeHtml(v.visa_subclass)}</span> ${escapeHtml(v.visa_name || "")}</div>`;
+          html += `<div class="list-name">${escapeHtml(v.list_code || "")}${v.visa_stream ? " · " + escapeHtml(v.visa_stream) : ""}</div>`;
+          html += `</div>`;
+        }
+        html += `</div></div>`;
+
+        // State nominations
+        if (relatedStates.length) {
+          html += `<div class="result-section"><h4>州/领地提名</h4><div class="state-chips">`;
+          relatedStates.forEach(sn => {
+            html += `<div class="state-chip"><span class="state-label">${escapeHtml(sn.state_name)}</span><span class="visa-label">${escapeHtml(sn.visa_subclass || "")}</span></div>`;
+          });
+          html += `</div></div>`;
+        } else {
+          html += `<div class="result-section"><h4>州/领地提名</h4><div class="no-results">暂无州提名数据（目前仅收录 NSW、QLD）</div></div>`;
+        }
+
+        html += `</div>`;
+      }
+
+      // Show state-only results (4-digit codes not matched above)
+      const shownCodes = new Set(Object.keys(grouped));
+      const extraStates = stateNoms.filter(sn => {
+        if (shownCodes.has(sn.anzsco_code)) return false;
+        for (const code of shownCodes) {
+          if (code.startsWith(sn.anzsco_code)) return false;
+        }
+        return true;
+      });
+
+      if (extraStates.length && Object.keys(grouped).length === 0) {
+        html += `<div class="result-card"><h3>州提名匹配结果</h3>`;
+        html += `<div class="result-section"><div class="state-chips">`;
+        extraStates.forEach(sn => {
+          html += `<div class="state-chip"><span class="state-label">${escapeHtml(sn.state_name)}</span> ${escapeHtml(sn.occupation_title)} <span class="visa-label">${escapeHtml(sn.anzsco_code)} · ${escapeHtml(sn.visa_subclass || "")}</span></div>`;
+        });
+        html += `</div></div></div>`;
+      }
+
+      el("lookupResults").innerHTML = html;
+    }
+
+    el("lookupBtn").addEventListener("click", doLookup);
+    el("lookupInput").addEventListener("keydown", (event) => {
+      if (event.key === "Enter") doLookup();
+    });
+
+    // Start on lookup view - don't render data view initially
+    el("lookupView").classList.remove("hidden");
+    el("dataView").classList.add("hidden");
   </script>
 </body>
 </html>
