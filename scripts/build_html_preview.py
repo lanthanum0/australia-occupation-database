@@ -497,6 +497,35 @@ HTML_TEMPLATE = """<!doctype html>
       margin-bottom: 16px;
     }
 
+    .guide-box[open] {
+      padding-bottom: 20px;
+    }
+
+    .guide-summary {
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .guide-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .guide-summary::before {
+      content: "▶";
+      font-size: 11px;
+      color: var(--muted);
+      transition: transform 0.2s;
+    }
+
+    .guide-box[open] .guide-summary::before {
+      transform: rotate(90deg);
+    }
+
     .guide-box h2 {
       margin: 0 0 16px;
       font-size: 16px;
@@ -506,6 +535,7 @@ HTML_TEMPLATE = """<!doctype html>
     .guide-steps {
       display: grid;
       gap: 14px;
+      margin-top: 16px;
     }
 
     .step {
@@ -701,8 +731,8 @@ HTML_TEMPLATE = """<!doctype html>
   <main>
     <!-- Lookup view (default) -->
     <section id="lookupView">
-      <div class="guide-box">
-        <h2>澳洲技术移民签证逻辑</h2>
+      <details class="guide-box">
+        <summary class="guide-summary">澳洲技术移民签证逻辑</summary>
         <div class="guide-steps">
           <div class="step">
             <div class="step-num">1</div>
@@ -738,7 +768,7 @@ HTML_TEMPLATE = """<!doctype html>
             </div>
           </div>
         </div>
-      </div>
+      </details>
 
       <div class="lookup-box">
         <h2>输入你的职业，查看完整路径</h2>
