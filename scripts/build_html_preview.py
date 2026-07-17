@@ -1227,9 +1227,28 @@ HTML_TEMPLATE = """<!doctype html>
         return;
       }
 
+      // Normalize common spelling variants for fuzzy matching
+      function normalize(text) {
+        return text.toLowerCase()
+          .replace(/adviser/g, "advisor")
+          .replace(/organiser/g, "organizer")
+          .replace(/specialised/g, "specialized")
+          .replace(/analyse/g, "analyze")
+          .replace(/programme/g, "program")
+          .replace(/labour/g, "labor")
+          .replace(/colour/g, "color")
+          .replace(/centre/g, "center")
+          .replace(/defence/g, "defense")
+          .replace(/licence/g, "license");
+      }
+
+      const normQuery = normalize(query);
+
       // Search federal occupation records
       const matches = DATA.occupations.filter(row => {
-        return row.occupation_title.toLowerCase().includes(query)
+        const normTitle = normalize(row.occupation_title);
+        return normTitle.includes(normQuery)
+          || row.occupation_title.toLowerCase().includes(query)
           || row.anzsco_code.includes(query);
       });
 
@@ -1251,7 +1270,9 @@ HTML_TEMPLATE = """<!doctype html>
 
       // Also search state nominations (including 4-digit unit group match)
       const stateNoms = (DATA.state_nominations || []).filter(row => {
-        return row.occupation_title.toLowerCase().includes(query)
+        const normTitle = normalize(row.occupation_title);
+        return normTitle.includes(normQuery)
+          || row.occupation_title.toLowerCase().includes(query)
           || row.anzsco_code.includes(query);
       });
 
