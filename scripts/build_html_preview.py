@@ -1359,7 +1359,7 @@ HTML_TEMPLATE = """<!doctype html>
           });
           html += `</div></div>`;
         } else {
-          html += `<div class="result-section"><h4>州/领地提名</h4><div class="no-results">暂无州提名数据（目前仅收录 NSW、QLD）</div></div>`;
+          html += `<div class="result-section"><h4>州/领地提名</h4><div class="no-results">未在已收录州（NSW / QLD / TAS）找到该职业。VIC / SA / WA / NT / ACT 数据暂缺，可查询各州官方网站。</div></div>`;
         }
 
         html += `</div>`;
