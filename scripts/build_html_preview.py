@@ -65,6 +65,28 @@ def build_payload():
             ),
             "summary": rows(conn, "SELECT * FROM visa_occupation_summary"),
         }
+        # Add state nominations if the table exists
+        try:
+            data["state_nominations"] = rows(
+                conn,
+                """
+                SELECT
+                    id,
+                    state_code,
+                    state_name,
+                    anzsco_code,
+                    occupation_title,
+                    visa_subclass,
+                    stream,
+                    priority,
+                    conditions,
+                    source_url
+                FROM state_nominations
+                ORDER BY state_code, occupation_title
+                """,
+            )
+        except Exception:
+            data["state_nominations"] = []
         return data
     finally:
         conn.close()
@@ -496,6 +518,7 @@ HTML_TEMPLATE = """<!doctype html>
       </div>
       <nav class="tabs" aria-label="views">
         <button class="tab active" data-view="occupations">职业清单</button>
+        <button class="tab" data-view="state_nominations">州提名</button>
         <button class="tab" data-view="visas">签证列表</button>
         <button class="tab" data-view="summary">汇总</button>
         <button class="tab" data-view="sources">来源</button>
@@ -621,6 +644,26 @@ HTML_TEMPLATE = """<!doctype html>
           ["effective_from", "生效日"],
           ["official_url", "官方链接", "link"]
         ]
+      },
+      state_nominations: {
+        title: "州/领地职业提名清单",
+        rows: DATA.state_nominations || [],
+        searchable: ["occupation_title", "anzsco_code", "state_name", "visa_subclass", "priority", "conditions"],
+        filters: [
+          { key: "q", type: "search", label: "搜索" },
+          { key: "state_name", label: "州/领地" },
+          { key: "visa_subclass", label: "签证" },
+          { key: "priority", label: "优先级" }
+        ],
+        columns: [
+          ["state_name", "州/领地"],
+          ["anzsco_code", "ANZSCO"],
+          ["occupation_title", "职业", "wrap"],
+          ["visa_subclass", "签证"],
+          ["priority", "优先级"],
+          ["conditions", "备注", "wrap"],
+          ["source_url", "来源", "link"]
+        ]
       }
     };
 
@@ -658,7 +701,7 @@ HTML_TEMPLATE = """<!doctype html>
         ["签证条目", DATA.visas.length],
         ["Subclass", uniqueValues(DATA.visas, "subclasses").length],
         ["职业记录", DATA.occupations.length],
-        ["职业清单", uniqueValues(DATA.occupations, "list_code").length],
+        ["州提名", (DATA.state_nominations || []).length],
         ["官方来源", DATA.sources.length]
       ];
       el("metrics").innerHTML = metrics.map(([label, count]) => (
