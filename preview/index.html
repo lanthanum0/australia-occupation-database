@@ -618,6 +618,48 @@
       color: var(--muted);
     }
 
+    /* EOI Calculator */
+    .eoi-container { max-width: 680px; margin: 0 auto; }
+
+    .eoi-result-panel {
+      background: var(--accent);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .eoi-total-label { font-size: 13px; opacity: 0.85; margin-bottom: 2px; }
+    .eoi-total-score { font-size: 3rem; font-weight: 700; line-height: 1.1; }
+    .eoi-total-unit { font-size: 0.9rem; opacity: 0.7; margin-left: 4px; }
+    .eoi-verdict {
+      margin-top: 10px; font-size: 13px; opacity: 0.9;
+      padding: 5px 14px; background: rgba(255,255,255,0.15); border-radius: 16px; display: inline-block;
+    }
+    .eoi-breakdown { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 16px; }
+    .eoi-bk-item { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 8px; font-size: 12px; }
+    .eoi-bk-val { font-size: 1.1rem; font-weight: 600; }
+
+    .eoi-card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+      padding: 14px 16px; margin-bottom: 10px;
+    }
+    .eoi-card-title {
+      font-size: 14px; font-weight: 600; color: var(--ink);
+      display: flex; align-items: center; gap: 6px; margin-bottom: 6px;
+    }
+    .eoi-badge {
+      margin-left: auto; background: var(--soft); color: var(--accent);
+      font-size: 12px; padding: 2px 8px; border-radius: 10px; font-weight: 500;
+    }
+    .eoi-desc { font-size: 12px; color: var(--muted); margin-bottom: 8px; line-height: 1.5; }
+    .eoi-select {
+      width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px;
+      font-size: 13px; color: var(--ink); background: #fff;
+    }
+    .eoi-select:focus { outline: 2px solid var(--focus); outline-offset: 1px; }
+    .eoi-footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 20px; padding-bottom: 12px; }
+
     @media (max-width: 1100px) {
       .metrics { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
       .filter-grid { grid-template-columns: repeat(2, minmax(140px, 1fr)); }
@@ -646,6 +688,7 @@
         <button class="tab" data-view="visas">签证列表</button>
         <button class="tab" data-view="summary">汇总</button>
         <button class="tab" data-view="sources">来源</button>
+        <button class="tab" data-view="eoi">EOI 打分器</button>
       </nav>
     </div>
   </header>
@@ -741,6 +784,96 @@
           </div>
         </div>
       </section>
+    </section>
+
+    <!-- EOI Calculator view -->
+    <section id="eoiView" class="hidden">
+      <div class="eoi-container">
+        <div class="eoi-result-panel" id="eoiResultPanel">
+          <div class="eoi-total-label">你的 EOI 总分</div>
+          <div><span class="eoi-total-score" id="eoiTotalScore">0</span><span class="eoi-total-unit">分</span></div>
+          <div class="eoi-verdict" id="eoiVerdict">请选择各项条件</div>
+          <div class="eoi-breakdown">
+            <div class="eoi-bk-item"><div class="eoi-bk-val" id="eoiBk189">0</div><div>189 独立技术</div></div>
+            <div class="eoi-bk-item"><div class="eoi-bk-val" id="eoiBk190">0</div><div>190 州担保</div></div>
+            <div class="eoi-bk-item"><div class="eoi-bk-val" id="eoiBk491">0</div><div>491 偏远地区</div></div>
+          </div>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🎂 年龄<span class="eoi-badge" id="eoiBadgeAge">0 分</span></div>
+          <p class="eoi-desc">以收到邀请之日为准。25–32 岁得分最高，45 岁以上无法申请。</p>
+          <select id="eoiAge" class="eoi-select"><option value="0" selected>请选择年龄段</option><option value="25">18–24 岁（25 分）</option><option value="30">25–32 岁（30 分）</option><option value="25">33–39 岁（25 分）</option><option value="15">40–44 岁（15 分）</option><option value="0">45 岁及以上（0 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🗣️ 英语能力<span class="eoi-badge" id="eoiBadgeEnglish">0 分</span></div>
+          <p class="eoi-desc">接受雅思、PTE、TOEFL iBT、CAE。4×6 是门槛不加分，7 分起才有加分。成绩有效期 3 年。</p>
+          <select id="eoiEnglish" class="eoi-select"><option value="0" selected>请选择英语水平</option><option value="0">Competent — 雅思 4×6 / PTE 4×50（0 分）</option><option value="10">Proficient — 雅思 4×7 / PTE 4×65（10 分）</option><option value="20">Superior — 雅思 4×8 / PTE 4×79（20 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🌍 海外工作经验<span class="eoi-badge" id="eoiBadgeOverseas">0 分</span></div>
+          <p class="eoi-desc">须与提名职业高度相关，经评估机构认可。每周至少 20 小时有薪工作。</p>
+          <select id="eoiOverseas" class="eoi-select"><option value="0" selected>请选择海外工作年限</option><option value="0">少于 3 年（0 分）</option><option value="5">3–4 年（5 分）</option><option value="10">5–7 年（10 分）</option><option value="15">8 年及以上（15 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🇦🇺 澳洲工作经验<span class="eoi-badge" id="eoiBadgeAuwork">0 分</span></div>
+          <p class="eoi-desc">在澳境内从事提名职业的经验。须持合法工作签证，学生签兼职不算。</p>
+          <select id="eoiAuwork" class="eoi-select"><option value="0" selected>请选择澳洲工作年限</option><option value="0">少于 1 年（0 分）</option><option value="5">1–2 年（5 分）</option><option value="10">3–4 年（10 分）</option><option value="15">5–7 年（15 分）</option><option value="20">8 年及以上（20 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🎓 学历<span class="eoi-badge" id="eoiBadgeEdu">0 分</span></div>
+          <p class="eoi-desc">需经评估机构认定为等同于澳洲水平。海外学历通过 AQF 对等评估。</p>
+          <select id="eoiEdu" class="eoi-select"><option value="0" selected>请选择最高学历</option><option value="20">博士学位（20 分）</option><option value="15">本科 / 硕士学位（15 分）</option><option value="10">Diploma / 大专 / 技术资格（10 分）</option><option value="0">被认可的职业评估资格（0 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">📚 澳洲两年学习<span class="eoi-badge" id="eoiBadgeAustudy">0 分</span></div>
+          <p class="eoi-desc">CRICOS 注册课程，完成 2 学年（≥92 周）全日制学习，英语授课。</p>
+          <select id="eoiAustudy" class="eoi-select"><option value="0" selected>不满足（0 分）</option><option value="5">满足（5 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🔬 STEM 研究型学位<span class="eoi-badge" id="eoiBadgeSpecialist">0 分</span></div>
+          <p class="eoi-desc">在澳洲完成 STEM/ICT 领域的研究型硕士或博士。授课型不算。</p>
+          <select id="eoiSpecialist" class="eoi-select"><option value="0" selected>不满足（0 分）</option><option value="10">满足（10 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">💼 职业年<span class="eoi-badge" id="eoiBadgePy">0 分</span></div>
+          <p class="eoi-desc">44 周行业衔接项目（含 12 周实习）。仅限会计、IT、工程方向。</p>
+          <select id="eoiPy" class="eoi-select"><option value="0" selected>未完成（0 分）</option><option value="5">已完成（5 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🌐 NAATI CCL<span class="eoi-badge" id="eoiBadgeNaati">0 分</span></div>
+          <p class="eoi-desc">通过社区语言考试，证明中英双向口译能力。</p>
+          <select id="eoiNaati" class="eoi-select"><option value="0" selected>未获得（0 分）</option><option value="5">已通过（5 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">🏞️ 偏远地区学习<span class="eoi-badge" id="eoiBadgeRegional">0 分</span></div>
+          <p class="eoi-desc">在悉尼、墨尔本、布里斯班以外的偏远地区完成学习，须同时满足两年学习要求。</p>
+          <select id="eoiRegional" class="eoi-select"><option value="0" selected>不满足（0 分）</option><option value="5">满足（5 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">👫 配偶加分<span class="eoi-badge" id="eoiBadgePartner">0 分</span></div>
+          <p class="eoi-desc">单身自动得 10 分；配偶有职业评估+英语加 10 分；仅有英语加 5 分。</p>
+          <select id="eoiPartner" class="eoi-select"><option value="0" selected>无配偶 / 不加分（0 分）</option><option value="10">配偶有职业评估 + Competent English（10 分）</option><option value="5">配偶仅有 Competent English（5 分）</option><option value="10">单身申请人（10 分）</option></select>
+        </div>
+
+        <div class="eoi-card">
+          <div class="eoi-card-title">📋 州担保 / 亲属担保<span class="eoi-badge" id="eoiBadgeNomination">0 分</span></div>
+          <p class="eoi-desc">189 无需担保但竞争最激烈；190 州提名 +5 分；491 偏远地区 +15 分。</p>
+          <select id="eoiNomination" class="eoi-select"><option value="0" selected>无担保 — 189（0 分）</option><option value="5">190 州担保（+5 分）</option><option value="15">491 偏远地区（+15 分）</option></select>
+        </div>
+
+        <div class="eoi-footer">本工具仅供参考，以移民局官方 SkillSelect 系统为准</div>
+      </div>
     </section>
   </main>
 
@@ -1081,11 +1214,15 @@
       state.page = 1;
       document.querySelectorAll(".tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
 
+      el("lookupView").classList.add("hidden");
+      el("dataView").classList.add("hidden");
+      el("eoiView").classList.add("hidden");
+
       if (view === "lookup") {
         el("lookupView").classList.remove("hidden");
-        el("dataView").classList.add("hidden");
+      } else if (view === "eoi") {
+        el("eoiView").classList.remove("hidden");
       } else {
-        el("lookupView").classList.add("hidden");
         el("dataView").classList.remove("hidden");
         renderMetrics();
         renderFilters();
@@ -1301,6 +1438,59 @@
     // Start on lookup view - don't render data view initially
     el("lookupView").classList.remove("hidden");
     el("dataView").classList.add("hidden");
+    el("eoiView").classList.add("hidden");
+
+    // --- EOI Calculator ---
+    (function() {
+      const eoiFields = [
+        {id: "eoiAge", badge: "eoiBadgeAge"},
+        {id: "eoiEnglish", badge: "eoiBadgeEnglish"},
+        {id: "eoiOverseas", badge: "eoiBadgeOverseas"},
+        {id: "eoiAuwork", badge: "eoiBadgeAuwork"},
+        {id: "eoiEdu", badge: "eoiBadgeEdu"},
+        {id: "eoiAustudy", badge: "eoiBadgeAustudy"},
+        {id: "eoiSpecialist", badge: "eoiBadgeSpecialist"},
+        {id: "eoiPy", badge: "eoiBadgePy"},
+        {id: "eoiNaati", badge: "eoiBadgeNaati"},
+        {id: "eoiRegional", badge: "eoiBadgeRegional"},
+        {id: "eoiPartner", badge: "eoiBadgePartner"},
+        {id: "eoiNomination", badge: "eoiBadgeNomination"},
+      ];
+
+      function eoiCalc() {
+        let base = 0, nom = 0;
+        eoiFields.forEach(f => {
+          const val = parseInt(document.getElementById(f.id).value) || 0;
+          const badge = document.getElementById(f.badge);
+          if (badge) {
+            badge.textContent = val + " 分";
+            badge.style.background = val > 0 ? "#ddf4e4" : "";
+            badge.style.color = val > 0 ? "#1a6b3a" : "";
+          }
+          if (f.id === "eoiNomination") nom = val;
+          else base += val;
+        });
+
+        const total = base + nom;
+        document.getElementById("eoiTotalScore").textContent = total;
+        document.getElementById("eoiBk189").textContent = base;
+        document.getElementById("eoiBk190").textContent = base + 5;
+        document.getElementById("eoiBk491").textContent = base + 15;
+
+        const v = document.getElementById("eoiVerdict");
+        if (total === 0) v.textContent = "请选择各项条件";
+        else if (total >= 90) v.textContent = "🎉 极具竞争力，189 获邀概率高";
+        else if (total >= 80) v.textContent = "✅ 有竞争力，189 有机会 / 190 较稳";
+        else if (total >= 70) v.textContent = "⚠️ 189 较难，建议考虑 190 州担保";
+        else if (total >= 65) v.textContent = "📋 达到最低门槛，建议 491 偏远地区";
+        else v.textContent = "❌ 未达 65 分最低门槛，需提升条件";
+      }
+
+      eoiFields.forEach(f => {
+        document.getElementById(f.id).addEventListener("change", eoiCalc);
+      });
+      eoiCalc();
+    })();
   </script>
 </body>
 </html>
