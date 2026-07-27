@@ -1055,7 +1055,7 @@ HTML_TEMPLATE = """<!doctype html>
       state_nominations: {
         title: "州/领地职业提名清单",
         rows: DATA.state_nominations || [],
-        note: "已覆盖 3/8：<b>NSW</b>（4位ANZSCO unit group，190/491）· <b>QLD</b>（6位ANZSCO，190/491）· <b>TAS</b>（Health / Allied Health / Teaching 专项）。未覆盖：<b>VIC</b>（Salesforce 门户）· <b>SA</b>（SPA 未渲染）· <b>WA</b>（数据在需交互展开的区域）· <b>NT</b> · <b>ACT</b>（Cloudflare Turnstile 拦截）。数据抓取于 2026-07。",
+        note: "已覆盖 4/8：<b>NSW</b>（4位ANZSCO unit group，190/491）· <b>QLD</b>（6位ANZSCO，190/491）· <b>TAS</b>（Health / Allied Health / Teaching 专项）· <b>NT</b>（Offshore 清单）。未覆盖：<b>VIC</b>（Salesforce 门户）· <b>SA</b>（SPA 未渲染）· <b>WA</b>（数据在需交互展开的区域）· <b>ACT</b>（Cloudflare Turnstile 拦截）。数据抓取于 2026-07。",
         searchable: ["occupation_title", "anzsco_code", "state_name", "visa_subclass", "priority", "conditions"],
         filters: [
           { key: "q", type: "search", label: "搜索" },
@@ -1496,7 +1496,7 @@ HTML_TEMPLATE = """<!doctype html>
           });
           html += `</div></div>`;
         } else {
-          html += `<div class="result-section"><h4>州/领地提名</h4><div class="no-results">未在已收录州（NSW / QLD / TAS）找到该职业。VIC / SA / WA / NT / ACT 数据暂缺，可查询各州官方网站。</div></div>`;
+          html += `<div class="result-section"><h4>州/领地提名</h4><div class="no-results">未在已收录州（NSW / QLD / TAS / NT）找到该职业。VIC / SA / WA / ACT 数据暂缺，可查询各州官方网站。</div></div>`;
         }
 
         html += `</div>`;

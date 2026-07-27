@@ -423,7 +423,10 @@ def parse_tas(html_path: Path) -> list[StateOccupation]:
 
 
 def parse_nt(html_path: Path) -> list[StateOccupation]:
-    """Parse Northern Territory occupation list."""
+    """Parse Northern Territory occupation list.
+
+    NT table has columns: ANZSCO | Occupation | Comments
+    """
     soup = BeautifulSoup(html_path.read_bytes(), "html.parser")
     results = []
 
@@ -438,6 +441,7 @@ def parse_nt(html_path: Path) -> list[StateOccupation]:
 
         code_idx = next((i for i, h in enumerate(headers) if "anzsco" in h or "code" in h), None)
         title_idx = next((i for i, h in enumerate(headers) if "occupation" in h or "title" in h), None)
+        comment_idx = next((i for i, h in enumerate(headers) if "comment" in h), None)
 
         if code_idx is None or title_idx is None:
             continue
@@ -453,8 +457,7 @@ def parse_nt(html_path: Path) -> list[StateOccupation]:
             if not re.match(r'^\d{6}$', code):
                 continue
 
-            extra = " | ".join(_clean(cells[i].get_text()) for i in range(len(cells))
-                              if i not in (code_idx, title_idx) and _clean(cells[i].get_text()))
+            comment = _clean(cells[comment_idx].get_text()) if comment_idx is not None and comment_idx < len(cells) else None
 
             results.append(StateOccupation(
                 state_code="nt",
@@ -462,10 +465,10 @@ def parse_nt(html_path: Path) -> list[StateOccupation]:
                 anzsco_code=code,
                 occupation_title=title,
                 visa_subclass="190/491",
-                stream=None,
+                stream="Offshore",
                 priority=None,
-                conditions=extra or None,
-                source_url="https://theterritory.com.au/migrate/nominating-for-a-visa/skilled-occupation-list",
+                conditions=comment or None,
+                source_url="https://australiasnorthernterritory.com.au/move/migrate-to-work/nt-government-visa-nomination/nt-offshore-migration-occupation-list",
             ))
 
     return results
